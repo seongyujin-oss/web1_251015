@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>id섹션이동</title>
+    <style>
+        #section1 {
+            background-color: green;
+            margin-top: 500px;
+            /*  */
+            height: 1000px;
+            /* 컬러 부분의 사이즈 */
+            margin-bottom: 100px;
+            /* 컬러와 컬러 사이에 있는 텀이 마진 바텀 */
+        }
+
+        #section2 {
+            background-color: cadetblue;
+            height: 1000px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="tel:01040654609">전화걸기</a>
+    <a href="mailto:yj7880@naver.com">메일전송하기</a>
+    <a href="./이력서양식1.pdf">이력서 다운받기</a>
+    <a href="../day3/속성.html">속성 파일로 이동하기</a>
+    <section id="section1">
+        <a href="#section2">
+            이곳은 섹션1이고 이 글을 클릭하면 섹션2로 넘어갑니다.
+        </a>
+    </section>
+    <section id="section2">
+        <a href="#section1">
+            이곳은 섹션2이고 이 글을 클릭하면 섹션1로 넘어갑니다.
+        </a>
+    </section>
+</body>
+
+</html>
