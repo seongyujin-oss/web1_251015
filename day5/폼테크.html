@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form테그</title>
+</head>
+
+<body>
+    <form name="user" action="/summit_page" method="post">
+        <!-- 데이터 전송페이지 임시라서 없음 -->
+        <div>
+        <label for="yj7880">이름을 입력하세요</label>
+       <input type="text" placeholder="김길동" required id="yj7880">
+    </div>
+    <div>
+        checkbox:  <input type="checkbox">
+
+        강아지:  <input type="checkbox">
+
+        고양이:  <input type="checkbox">
+
+    </div>
+    <div>
+        password: <input type="password" minlength="8">
+    </div>
+    <div>
+        number:  <input type="number" max="150">
+    </div>
+    <div>
+        email:  <input type="email">
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+    <div>
+        <input type="tel" disabled>
+    </div>
+    <div>
+       여 <input type="radio" name="gender" value="female">
+       남 <input type="radio"name="gender"value="men">
+    </div>
+    <div>
+        <input type="date">
+    </div>
+    <div>
+        <input type="button" value="버튼을 글릭하세요">
+    </div>
+
+    <div>
+     <textarea name="개선의견" cols="30" rows="10" placeholder="여러분들의 소중한 의견을 달아주세요"></textarea>
+    <!-- cols열 rows행 -->
+
+    <div>
+        <button type="reset">초기화</button>
+    </div>
+
+    </div>
+    </form>
+    <!-- input이 가로로 나열되는 이유는 인라인테그이기 때문 div는 불록테그(한줄을 다 차지하는 코드). -->
+    <!-- 테그의 구조를 변경할 때 div활용 -->
+</body>
+
+</html>
