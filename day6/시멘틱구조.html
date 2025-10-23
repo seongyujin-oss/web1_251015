@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시멘틱구조</title>
+</head>
+<body>
+    <header>
+        <h1>logo</h1>
+        <nav>
+      <!-- div로 작성해도 무방 태그를 사용하는건 내마음 -->
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">회사정보</a></li>
+                <li><a href="#">contack</a></li>
+<!-- "" 안에 # 쓰는 이유 : 연결할 창이 없기때문에 임시로 써넣음 -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 여기도 main이 필수가 아님 div로 감싸도 됨 -->
+        <!-- 얼마나 더 꼼꼼하게 묶어주느냐는 코드 짜는 사람에 성격에 따라.. -->
+        <section>
+            <h2>이 부분은 웰시코기에 대한 부분입니다.</h2>
+            <img src="../day5/welsh-corgi-2349517_1280.jpg" alt="웰시코기">
+        </section>
+        <br>
+        <br>
+        <section>
+            <h2>이 부분은 감자에 대한 부분입니다.</h2>
+            <img src="../day2/웰시.jpg" alt="감자">
+        </section>
+
+        <article>
+            <section></section>
+            <section></section>
+        </article>
+
+    <section>
+        <article></article>
+        <article></article>
+        <!-- div도 상관없다 작성자 스타일에 따라 다름
+        보통은 div가 많이 쓰이긴 함 -->
+    </section>
+</main>
+
+
+    <aside>
+        <h3>사이드입니다.</h3>
+        <p>aside 태그는 주로 문서의 메인 내용과 관련되지 않은 별도로 분리된 추가적인 정보를 제공하는데 사용한다</p>
+        <p>레이아웃의 배치를 사이드로 빼고싶으면 scc의 도움을 받아야한다</p>
+    </aside>
+    <!-- aside는 크게 중요하지 않는 내용을 넣어주는 곳 예를들면 광고같은 (블로그 옆에 동동떠다니는 작은 칸 같은거)-->
+    
+    <br>
+    <br>
+    <br>
+
+<footer>우리회사 정보~~~~~ 사업자번호 주소 전화번호 등등</footer>
+    
+    
+</body>
+</html>
