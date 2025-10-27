@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css문법</title>
+    <style>
+        /* 아래 h1, .dog, .cat을 "선택자"(영어로 셀렉터)라고 부른다 */
+        /* 그 아래 color, font는 "속성"(영어로는 프로퍼티)이라고 부른다 */
+        /* 색상과 px값은 속성값(영어로는 벨류)라고한다. */
+        /* 속성값 뒤에는 ;세미콜론이 붙는다 */
+        /* h1{
+            color: blue;
+            font-size: 16px;
+        }
+        .dog{
+            color: red;
+        }
+        .cat{
+            color: blue;
+        }
+        */
+        * {
+            color: red;
+            /* 전체 선택자로 모든 태그를 선택하는 선택자 */
+            font-size: 16px;
+        }
+
+        #id_seletor {
+            /* #은 아이디를 선택한다.*/
+        }
+
+        .class {
+            /* .dms class를 선택한다. */
+
+        }
+
+        .container li {
+            list-style: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container"></div>
+    <h1>class문법실습</h1>
+    <p class="dog">강아지는 빨강</p>
+    <p class="cat">고양이는 파랑</p>
+
+    <div class="container">
+        <ul class="menu1">
+            <li>자식</li>
+            <li>자식</li>
+            <li>자식</li>
+        </ul>
+
+        <ul class="menu2">
+            <li>자식</li>
+            <li>자식</li>
+            <li>자식</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
