@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css선택자</title>
+    <!-- 컨트롤+쉬프트+엔터 (위에 한줄 만드는 단축키) -->
+    <style>
+        .mid ~ li {
+            background-color: green;
+            /* ~는 형제선택자 : mid 뒤에 오는 li 전체를 선택 */
+        }
+        .china_food + li {
+            /* +는 인접형제선택자 : china_food 뒤에 오는 li만 선택 */
+            background-color: red;
+        }
+.p_tag,
+h2,
+.span_tag {
+    background-color: blue;
+    /* ,로 구분해주는거는 그룹선택자 */
+}
+
+/* "*"은 전체선택자 "#"은 id선택자, "."은class선택자, 태그이름:동일한 이름을 가진 태그를 모두 선택함
+태그이름, classname:,로 구분하면 그룹선택자 */
+
+.menu > li:last child {
+    color: red;
+}
+
+.menu > li:nth-child(2) {
+    color: blue;
+}
+
+.web > li:nth-child(even) {
+    color: aquamarine;
+}
+/* 짝수로 색상지정 */
+
+.web > li:nth-child(odd) {
+    color: blueviolet;
+    /* 홀수로 색상지정 */
+}
+
+.web > li:last-child {
+    color: cadetblue;
+}
+
+.web > li:first-child {
+    color: cyan;
+}
+
+    </style>
+</head>
+<body>
+    <ul class="web">
+        <li>html</li>
+        <li>css</li>
+        <li class="mid">jabascript</li>
+        <li>uxui</li>
+        <li>portopolio</li>
+    </ul>
+<br>
+    <ul class="menu">
+        <li class="china_food">자장면</li>
+        <li>짬뽕</li>
+        <li>탕수육</li>
+        <li>팔보채</li>
+        <li>유산슬</li>
+    </ul>
+<br>
+<div>
+    <p class="p_tag">피테그</p>
+    <h2>해딩2</h2>
+    <span class="span_tag">스펜테그</span>
+</div>
+
+</body>
+</html>
