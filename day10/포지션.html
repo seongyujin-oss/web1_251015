@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포지션</title>
+    <!-- 중요하고 유용하게 쓰임! 헷갈리고 조금 어려움-->
+    <!-- 컨텐츠를 겹치게 작업할 수 있게 하는 코드 -->
+    <style>
+        .container {
+            position: relative;
+            /* 기준설정(위치 이동 시) */
+            width: 500px;
+            border: 1px solid #000;
+            margin-top: 50px;
+            height: 500px;
+        }
+
+        /* .box {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+        } */
+        /* 위에처럼 주면 문구가 다 겹쳐버림 box에 전부 absolute를 줬기 때문 */
+        /*  */
+
+        .box {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .b1 {
+            background: salmon;
+            top: 130px;
+            left: 60px;
+        }
+
+        .b2 {
+            background: red;
+            top: 300px;
+            left: 150px;
+            /* top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            내 크기의 절반을 올라가고, 왼쪽으로가기 */
+        }
+
+        .b3 {
+            background: blue;
+            /* bottom: 0;
+            right: 0; */
+            top: 50px;
+            right: 60px;
+            transform: translateY(-50%);
+        }
+
+        /* relative 는 부모요소에 주는 것, absolute는 자식에게 주는 것 두가지 사용해야함 */
+        /* absolute를 주었다면 위치 속성을 넣어주어야함 (left, top, bottom, right) */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box b1">왼쪽 위</div>
+        <div class="box b2">중간</div>
+        <div class="box b3">오른쪽 아래</div>
+    </div>
+</body>
+
+</html>
