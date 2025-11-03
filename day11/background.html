@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백그라운드</title>
+    <style>
+        .body {
+            height: 5000px;
+        }
+
+        .box_container>div {
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+            text-align: center;
+            line-height: 500px;
+        }
+
+        .box1 {
+            background-color: aqua;
+        }
+
+        .box2 {
+            background-color: rgb(131, 131, 173);
+        }
+
+        .box3 {
+            background-color: rgba(111, 222, 100, 0.5);
+            /* rgb뒤에 a붙이고 마지막에 0.5는 투명도 조절 */
+        }
+
+        .img_box {
+            background-image: url(./A00000018491610ko.jpg);
+            background-size: 250px 300px;
+            /* background-size: 70%; */
+            /* background-size: contain; */
+            /* 원본비율 유지함. 이미지가 잘리지는 않음 */
+            /* background-size: cover; */
+            /* 원본비율을 유지한채로 요소를 싹 덮어주는 (이미지 잘릴수있음) */
+            background-repeat: no-repeat;
+            /* 이미지를 하나만 보여지게 함 */
+            background-position: bottom left;
+            /* .img_box 요소 안에 1개의 이미지 위치를 설정 */
+        }
+
+        div.img_box2 {
+            background-image: url(./다운로드\ \(3\).jfif);
+            background-size: cover;
+            background-position: -25%;
+            background-attachment: fixed;
+            height: 1000px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box_container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+        <div class="box3">box3</div>
+
+        <div class="img_box"></div>
+
+        <div class="img_box2"></div>
+    </div>
+</body>
+
+</html>
