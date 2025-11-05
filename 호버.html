@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            display: flex;
+            /* 상자 안의 내용을 자유롭게 정렬할 수 있도록 해주는 것 
+            이게 있어야 아래가 작동*/
+            justify-content: center;
+            /* 가로 중앙 정렬 */
+            align-items: center;
+            /* 세로 중앙 정렬 */
+        }
+
+        .box:hover {
+            background-color: pink;
+        }
+
+        .box_text {
+            margin: 0;
+            padding: 0;
+            font-size: 50px;
+            font-weight: 900;
+            color: white;
+        }
+
+        .box:hover .box_text {
+            color: pink;
+        }
+
+        .btn_section {
+            height: 500px;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .viwe_but {
+            background-color: black;
+            color: white;
+            width: 150px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+            border: 1px solid #ffff
+        }
+
+        .viwe_but:hover {
+            background-color: white;
+            color: #000;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <p class="box_text">박스텍스트입니다</p>
+    </div>
+
+    <section class="btn_section">
+        <button class="viwe_but">버튼</button>
+    </section>
+
+</body>
+
+</html>

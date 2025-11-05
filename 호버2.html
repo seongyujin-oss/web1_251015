@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호버2</title>
+
+    <style>
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+        }
+
+        .box:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .btn{
+            width: 500px;
+            height: 500px;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn_section {
+            width: 150px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn_section:hover{
+            background-color: white;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <p class="text">박스 텍스트입니다.</p>
+    </div>
+
+    <section class="btn">
+        <button class="btn_section">확인</button>
+    </section>
+</body>
+
+</html>
